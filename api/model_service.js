@@ -27,7 +27,7 @@ export function send_image({byte_image}, cb){
     return fetch("https://api-inference.huggingface.co/models/ALM-AHME/beit-large-patch16-224-finetuned-BreastCancer-Classification-BreakHis-AH-60-20-20",{
         method:"POST",
         headers:{
-            'Authorization':'Bearer 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',
+            'Authorization':'Bearer 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',
             'Content-Type': 'application/json'
         },
         body: byteArray

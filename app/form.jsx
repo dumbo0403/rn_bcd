@@ -56,7 +56,11 @@ export default function(){
                             return accumulator + currentValue;
                           }, 0);
                         sum += (age - 35) * 0.1
-                        message(`Таны оноо:${sum}`)
+                        if(sum>=10){
+                            message(`Таны оноо:${sum}%\n\nУучлаарай та эрүүл мэндийн байгууллагад хандаж үзээрэй`)
+                        }else{
+                            message(`Таны оноо:${sum}%\n\nТаны эрүүл мэндийн өгөгдөл хэвийн гэсэн үр дүн өглөө`)
+                        }
                         setPoint([])
                         router.back()
                     }}
